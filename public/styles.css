@@ -1,0 +1,245 @@
+body {
+    font-family: american typewriter, serif;
+    background-color: #f5f8fa;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 1rem 0;
+    color: white;
+    position: relative;
+}
+
+/* No changes in the header and search bar styles */
+
+.search-results {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%; /* Match the width of the search bar */
+    left: 0; /* Center the search results */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure the search results are on top of other elements */
+}
+
+.search-results p {
+    margin: 0;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: #333; /* Set the text color to make it visible */
+}
+
+.search-results p:hover {
+    background-color: #f5f8fa;
+}
+
+#backToMain {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#backToMain:hover {
+    background-color: #45a049;
+}
+
+
+.school-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.school-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.school-box:hover {
+    transform: translateY(-5px);
+}
+
+.school-box .rank {
+    font-size: 2rem; /* Change the font size here */
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif; /* Change the font family here */
+    margin-right: 1rem;
+}
+
+.school-box h3 {
+    margin: 0;
+    flex: 1;
+}
+
+.school-box .likes {
+    font-size: 1.5rem;
+    color: #f44336;
+    margin-left: 1rem;
+}
+
+
+
+#searchBar {
+    width: 80%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+}
+#pageNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  #pageNavigation button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  #pageNavigation button:hover {
+    background-color: #45a049;
+  }
+  
+  #pageNavigation button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #pageNavigation span {
+    font-size: 16px;
+    margin: 0 1rem;
+  }
+
+  h2#mainTitle {
+    text-align: center; /* Center the title */
+    font-family: 'Roboto', sans-serif; /* Use a cool font */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .page-numbers .page-number {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .page-numbers .page-number:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .page-numbers .page-number.current {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bounce-word {
+    display: inline-block;
+    animation: bounce 1s ease infinite;
+  }
+  
+  .bounce-word:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .bounce-word:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .bounce-word:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  
+  #fixed-share-links {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* Vertically center the div */
+  
+    /* Style the div as needed */
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  #fixed-share-links a {
+    display: block;  /* To arrange the buttons vertically */
+    margin-bottom: 10px;
+  }
+  
+  #fixed-share-links a:last-child {
+    margin-bottom: 0;  /* Remove margin from the last button */
+  }
+  
+
+#fixed-share-links i {
+  font-size: 24px; /* Change to the size you want */
+  transition: color 0.3s ease;
+}
