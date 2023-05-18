@@ -87,7 +87,7 @@ function displaySelectedSchool(schoolId) {
 
 function voteForSchool(schoolId) {
   if (counter > 0) {
-    fetch(`http://localhost:3000/vote?schoolId=${schoolId}`, {
+    fetch(`https://votemyschool.herokuapp.com/vote?schoolId=${schoolId}`, {
         method: 'GET'
     })
     .then(response => {
