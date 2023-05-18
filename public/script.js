@@ -1,7 +1,7 @@
 let schools = [];
 const totalPages = 5; 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('http://localhost:3000/schools')
+  fetch('https://votemyschool.herokuapp.com/schools')
       .then(response => response.json())
       .then(data => {
           schools = data;
