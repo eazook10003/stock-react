@@ -93,5 +93,5 @@ function defineRoutes() {
   
 
   const port = 3000;
-  app.listen(port, () => console.log(`Server listening at http://localhost:${port}`));
+  app.listen(process.env.PORT || port, () => console.log(`Server listening at http://localhost:${port}`));
 }
