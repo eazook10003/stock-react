@@ -214,32 +214,3 @@ header {
   h1 {
     text-align: center;
   }
-  
-  
-  #fixed-share-links {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    /* Vertically center the div */
-  
-    /* Style the div as needed */
-    background-color: white;
-    padding: 10px;
-    border-radius: 0 10px 10px 0;
-  }
-  
-  #fixed-share-links a {
-    display: block;  /* To arrange the buttons vertically */
-    margin-bottom: 10px;
-  }
-  
-  #fixed-share-links a:last-child {
-    margin-bottom: 0;  /* Remove margin from the last button */
-  }
-  
-
-#fixed-share-links i {
-  font-size: 24px; /* Change to the size you want */
-  transition: color 0.3s ease;
-}
