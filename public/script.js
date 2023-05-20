@@ -60,7 +60,6 @@ function initializeApp() {
 
   // Call displaySchoolsPage after generating the page numbers
   displaySchoolsPage(1);
-  console.log("displaySchoolspage2");
 }
 
 let counter = 0;
@@ -105,11 +104,9 @@ function voteForSchool(schoolId) {
             const mainTitle = document.getElementById('mainTitle');
             if (mainTitle.innerText === 'Selected School') {
                 displaySelectedSchool(school.id);
-                console.log("selected page displayed");
             } 
             else {
                 populateSchoolList();
-                console.log("populate school");
             }
         }
     })
@@ -139,7 +136,6 @@ function addSchoolToDOM(school) {
       voteForSchool(school.id);
     }
     counter+=1;
-    console.log("displayschool activated");
   });
 }
 
@@ -157,7 +153,6 @@ function populateSchoolList() {
   //schools = sortedSchools.slice(0, 100);
 
   displaySchoolsPage(1);
-  console.log("displaysSchoolsPage1");
   document.getElementById('mainTitle').style.display = 'none';
   document.getElementById('bouncingTitle').style.display = 'block';
   document.getElementById('backToMain').style.display = 'none';
