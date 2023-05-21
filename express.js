@@ -16,7 +16,7 @@ const pool = new Pool({
   }
 });
 
-console.log('Connected to the schools database.');
+//console.log('Connected to the schools database.');
 defineRoutes();
 
 function defineRoutes() {
@@ -28,20 +28,20 @@ function defineRoutes() {
       return;
     }
 
-    console.log('Received schoolId: ', schoolId);
+    //console.log('Received schoolId: ', schoolId);
     let sql = `UPDATE Schools 
                SET likes = likes + 1 
                WHERE id = $1`;
 
     try {
       await pool.query(sql, [schoolId]);
-      console.log(`School with ID: ${schoolId} has received a vote`);
+      //console.log(`School with ID: ${schoolId} has received a vote`);
 
       // After updating the likes count in the database, 
       // retrieve the updated likes count and send it as a JSON response
       sql = `SELECT likes FROM Schools WHERE id = $1`;
       const { rows } = await pool.query(sql, [schoolId]);
-      console.log('Received row: ', rows[0]);
+      //console.log('Received row: ', rows[0]);
       res.json({likes: rows[0].likes});
     } catch (err) {
       console.error(err.message);
