@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 const pool = new Pool({
-  connectionString: 'postgres://nnxlbcackkirgn:7d872574bcac59d7ca34a4682109da44645cdcd8f75fd23f8f8e68e2c21d704b@ec2-3-208-74-199.compute-1.amazonaws.com:5432/d38ol91lqdu71i',
+  connectionString: 'postgres://ehfcibctboshik:f6166a7a782fab29076de85e953f46b77386466802dd08869ea34a9475e85878@ec2-3-233-77-220.compute-1.amazonaws.com:5432/d7a218q5sosg8m',
   ssl: {
     rejectUnauthorized: false
   }
